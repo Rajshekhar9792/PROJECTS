@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.container {
+  height: min-content;
+  width: 400px;
+  font-size: 23px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 28px;
+}
+
+.searchBox {
+  height: min-content;
+  width: 100%;
+  font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBox input {
+  width: 84%;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 12px 12px;
+  text-transform: capitalize;
+  background-color: #e6f5fb;
+}
+
+.searchBox input::placeholder {
+  color: #000;
+}
+
+.searchBox button {
+  height: 49px;
+  width: 49px;
+  font-size: 23px;
+  border-radius: 26px;
+  background-color: #e6f5fb;
+}
+
+.searchBox button:hover {
+  color: #fff;
+  background-color: #ababab;
+}
+
+.weatherBody {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+
+.weatherBody img {
+  width: 60%;
+}
+
+.weather-box {
+  margin-block: 20px;
+  text-align: center;
+}
+
+.weather-box .temprature {
+  font-size: 33px;
+  font-weight: 800;
+  position: relative;
+}
+
+.weather-box .temprature sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 600;
+}
+
+.weather-box .discription {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.humidity,
+.wind {
+  display: none;
+  /* display: flex; */
+  align-items: center;
+}
+
+.humidity {
+  margin-left: 20px;
+}
+
+.wind {
+  margin-right: 20px;
+}
+
+.humidity i,
+.wind i {
+  font-size: 34px;
+}
+
+.text,
+.wind-speed {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.text span,
+.wind-speed span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.not-found {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+.not-found h1 {
+  font-size: 23px;
+  color: #6b6b6b;
+  margin-bottom: 16px;
+}
+
+.not-found img {
+  width: 80%;
+}
